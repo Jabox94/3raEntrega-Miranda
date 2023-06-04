@@ -1,0 +1,13 @@
+@import './variables/bases';
+@import './mixins';
+
+// Layouts
+@import './layouts/header';
+@import './layouts/nav';
+@import './layouts/hero';
+@import './layouts/carousel';
+@import './layouts/main';
+@import './layouts/footer';
+
+//Paleta de colores
+@import './variables/colors';
