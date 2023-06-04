@@ -25,6 +25,7 @@
                     L a S de 9hs a 21hs
                 </p>
             </div>
+            <!-- Left header -->
             <div class="mid__header">
                 <p>Estas comprando en: </p>
                 <form class="form form-disable">
@@ -35,6 +36,7 @@
                     </select>
                 </form>
             </div>
+            <!-- Mid header -->
             <div class="right__header socials__header">
                 <div class="socials__header">
                     <ion-icon name="logo-facebook"></ion-icon>
@@ -42,8 +44,10 @@
                     <ion-icon name="logo-youtube"></ion-icon>
                 </div>
             </div>
+            <!-- Right header -->
         </div>
     </header>
+    <!--  -->
     <nav class="nav">
         <div class="nav__container">
             <div class="nav__left">
@@ -52,29 +56,34 @@
                     <h3>Supermarket</h3>
                 </div>
             </div>
+            <!-- Left nav -->
             <div class="nav__mid">
                 <form>
                     <ion-icon name="search"></ion-icon>
                     <input type="text" placeholder="Busca aquí...">
                 </form>
             </div>
+            <!-- mid nav -->
             <div class="nav__right">
                 <ion-icon name="cart"></ion-icon>
                 <ion-icon name="person-circle"></ion-icon>
             </div>
+            <!-- right nav -->
         </div>
     </nav>
+    <!--  -->
     <section class="section">
-        <div class="carousel">
+        <div class="carousel" data-carousel>
             <!-- Buttons -->
-            <button class="carousel-button prev">
+            <button class="carousel-button prev" id="btnPrev" data-carousel-button="prev">
                 <ion-icon name="arrow-back"></ion-icon>
             </button>
-            <button class="carousel-button next">
+
+            <button class="carousel-button next" id="btnNext" data-carousel-button="next">
                 <ion-icon name="arrow-forward"></ion-icon>
             </button>
             <!-- Slider -->
-            <ul class="slider">
+            <ul class="slider" id="slider" data-slides>
                 <li class="slide" data-active>
                     <img src="./media/dw-1920x400-aniversario-devoto-2023.webp" alt="Promocion aniversario de devoto">
                 </li>
@@ -86,6 +95,7 @@
                 </li>
             </ul>
         </div>
+        <!-- fin carousel -->
     </section>
 
     <main>
