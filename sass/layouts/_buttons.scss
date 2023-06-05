@@ -1,0 +1,43 @@
+button,
+a.button {
+    padding: 1rem 2rem;
+    margin: 0;
+
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+    background-color: transparent;
+
+
+    transition: all 0.4s ease-in;
+    transition-delay: 400ms;
+
+    &:hover {
+        background-color: var(--color2);
+        color: var(--white);
+        transition: all 0.4s ease-out;
+        transition-delay: 0ms;
+    }
+}
+
+a.button {
+    color: var(--white);
+    background-color: var(--color1);
+    margin: 1rem 0;
+}
+
+
+.button__hero--filled {
+    background-color: var(--color1);
+    color: var(--color4);
+
+    &:hover {
+        filter: none;
+        color: var(--color1);
+        background-color: var(--color4);
+    }
+}

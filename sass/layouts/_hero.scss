@@ -1,7 +1,98 @@
-.section {
+.section.hero {
     width: 100%;
     height: auto;
     overflow: hidden;
 
-    .hero {}
+    .hero__image {
+        width: 100%;
+        min-height: 400px;
+        margin: 0 auto;
+        position: relative;
+
+        background-image: url('../../media/hero__main.jpg');
+        background-position: center 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        image-rendering: optimizeSpeed;
+
+        @include desktop {
+            background-position: center 80%;
+            min-height: 600px;
+            image-rendering: optimizeQuality;
+        }
+
+        .image__sticky {
+            // Posicion
+            position: absolute;
+            right: 10%;
+            top: 10%;
+            z-index: 2;
+            //Forma 
+            width: 500px;
+            height: 350px;
+            padding: 3rem 2rem;
+            //Estilos 
+            border-radius: 20px;
+            background-color: var(--color4);
+            // Direccion
+            @include flex(space-between, center, 2rem);
+            flex-direction: column;
+
+            box-shadow: 0 0 10px 5px #888888;
+
+            h3 {
+                text-align: center;
+                color: var(--color1);
+            }
+
+            p {
+                padding: 0rem 2rem;
+                font-size: 1.7rem;
+                font-weight: 300;
+                line-height: 1.5;
+                color: var(--color2);
+                text-align: justify;
+
+                span {
+
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .hero__info {
+        width: 100%;
+        height: auto;
+
+        background: rgb(44, 54, 57);
+        background: -moz-radial-gradient(circle, rgba(44, 54, 57, 1) 0%, rgba(63, 78, 79, 1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(44, 54, 57, 1) 0%, rgba(63, 78, 79, 1) 100%);
+        background: radial-gradient(circle, rgba(44, 54, 57, 1) 0%, rgba(63, 78, 79, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c3639", endColorstr="#3f4e4f", GradientType=1);
+
+        ul {
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+            padding: 2rem 0;
+            @include flex(space-between, center, 2rem);
+
+            li {
+                @include flex(space-evenly, center, 2rem);
+
+                p {
+                    font-size: 1.5rem;
+                    color: var(--color4);
+                    width: 70%;
+                    padding: 0 1rem;
+                }
+
+                ion-icon {
+                    font-size: 4.3rem;
+                    color: var(--color3);
+                }
+            }
+        }
+    }
 }

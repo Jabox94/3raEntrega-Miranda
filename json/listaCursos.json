@@ -1,0 +1,56 @@
+[
+   {
+      "Nombre": "Curso de fotografia Fundamentos",
+      "Categoria": "Fotografia",
+      "Precio": 230,
+      "ID": "CFF"
+   },
+   {
+      "Nombre": "Curso de fotografia Intermedio",
+      "Categoria": "Fotografia",
+      "Precio": 320,
+      "ID": "CFI"
+   },
+   {
+      "Nombre": "Curso de fotografia Avanzado",
+      "Categoria": "Fotografia",
+      "Precio": 400,
+      "ID": "CFA"
+   },
+   {
+      "Nombre": "Curso de Cocina Fundamentos",
+      "Categoria": "Cocina",
+      "Precio": 230,
+      "ID": "CCF"
+   },
+   {
+      "Nombre": "Curso de Cocina Intermedio",
+      "Categoria": "Cocina",
+      "Precio": 320,
+      "ID": "CCI"
+   },
+   {
+      "Nombre": "Curso de Cocina Avanzado",
+      "Categoria": "Cocina",
+      "Precio": 400,
+      "ID": "CCA"
+   },
+   {
+      "Nombre": "Curso de JavaScript Fundamentos",
+      "Categoria": "Programacion",
+      "Precio": 230,
+      "ID": "CJF"
+   },
+   {
+      "Nombre": "Curso de JavaScript Intermedio",
+      "Categoria": "Programacion",
+      "Precio": 320,
+      "ID": "CJI"
+   },
+   {
+      "Nombre": "Curso de JavaScript Avanzado",
+      "Categoria": "Programacion",
+      "Precio": 400,
+      "ID": "CJA"
+   }
+]
