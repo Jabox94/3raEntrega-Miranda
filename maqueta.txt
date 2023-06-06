@@ -1,0 +1,11 @@
+<div class="course__card">
+<div class="imagen">
+    <img loading="lazy" src="./media/tumbnail/${id}.webp">
+</div>
+<div class="info__card">
+    <p class="categoria">${categoria}</p>
+    <h4 class="course__title">${nombreCurso}</h4>
+    <p>Precio: <span>$${precio}</span></p>
+    <button class="button-cart" id="add-to-cart">Añadir al carrito</button>
+</div>
+</div>

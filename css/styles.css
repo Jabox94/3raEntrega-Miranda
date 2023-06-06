@@ -325,7 +325,6 @@ ion-icon.nav-icons:hover {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-color: var(--purewhite);
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
@@ -342,16 +341,16 @@ ion-icon.nav-icons:hover {
 .courses__container {
   width: 100%;
   min-height: 40rem;
-  background-color: #e1e1e1;
   margin: 1.2rem 0;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  gap: 2rem;
+  align-items: flex-start;
+  gap: 1rem;
   flex-wrap: wrap;
+  border-top: 1px solid #000;
 }
 .courses__container .courses__card-container {
-  width: 80%;
+  width: 70%;
   height: auto;
   transition: all 0.4s linear;
   display: flex;
@@ -359,42 +358,69 @@ ion-icon.nav-icons:hover {
   align-items: center;
   gap: 2rem;
 }
-.courses__container .courses__card-container .course__card {
-  width: 35rem;
-  height: 50rem;
+.courses__container .courses__card-container > div .course__card {
+  width: 30rem;
+  height: auto;
   padding: 0.4rem;
+  background-color: var(--white);
+  border-radius: 10px;
 }
-.courses__container .courses__card-container .course__card .imagen {
+.courses__container .courses__card-container > div .course__card .imagen {
   width: 100%;
-  height: 35rem;
+  height: auto;
   margin: 0 auto;
 }
-.courses__container .courses__card-container .course__card .imagen img {
-  border-radius: 5px;
+.courses__container .courses__card-container > div .course__card .imagen img {
   width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
-.courses__container .courses__card-container .course__card .info__card {
+.courses__container .courses__card-container > div .course__card .info__card {
   width: 100%;
   height: auto;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-direction: column;
 }
-.courses__container .courses__card-container .course__card .info__card h4 {
+.courses__container .courses__card-container > div .course__card .info__card h4 {
+  width: auto;
+  height: auto;
   font-weight: 500;
+  text-transform: capitalize;
 }
-.courses__container .courses__card-container .course__card .info__card p {
+.courses__container .courses__card-container > div .course__card .info__card p {
+  width: auto;
+  height: auto;
+  text-transform: capitalize;
   text-align: start;
   font-size: 1.8rem;
   font-weight: 300;
 }
-.courses__container .courses__card-container .course__card .info__card p.categoria {
+.courses__container .courses__card-container > div .course__card .info__card p.categoria {
   color: var(--color3);
 }
-.courses__container .courses__card-container .course__card .info__card p span {
+.courses__container .courses__card-container > div .course__card .info__card p span {
   font-weight: bold;
 }
-.courses__container .courses__card-container .course__card:hover {
+.courses__container .courses__card-container > div .course__card .info__card .button-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1rem 0;
+}
+.courses__container .courses__card-container > div .course__card .info__card .button-container .button-cart {
+  width: auto;
+  height: auto;
+  background-color: var(--color3);
+  transition-delay: 0ms;
+}
+.courses__container .courses__card-container > div .course__card:hover {
   transition: all 0.4s linear;
-  border-radius: 10px;
   box-shadow: 0 0 10px 2px #8a8a8a;
 }
 
@@ -404,11 +430,10 @@ ion-icon.nav-icons:hover {
 }
 .course__header-container > h3 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   width: 100%;
-  text-align: start;
   font-size: 2.3rem;
   font-weight: 400;
   font-style: italic;
@@ -418,8 +443,87 @@ ion-icon.nav-icons:hover {
   font-size: 2.4rem;
 }
 
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color1);
+}
+.footer .footer__container {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.footer__container {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.footer__container .ft-socials {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__container .ft-socials ion-icon {
+  font-size: 2.2em;
+  color: var(--color3);
+}
+.footer__container .ft-socials ion-icon:nth-child(1):hover {
+  transition: all linear 0.2s;
+  color: var(--facebook);
+}
+.footer__container .ft-socials ion-icon:nth-child(2):hover {
+  transition: all linear 0.2s;
+  color: var(--instagram);
+}
+.footer__container .ft-socials ion-icon:nth-child(3):hover {
+  transition: all linear 0.2s;
+  color: var(--youtube);
+}
+.footer__container .ft-about {
+  width: 50%;
+  height: auto;
+}
+.footer__container .ft-about ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid var(--color3);
+  padding: 1.3rem 0;
+  border-radius: 20px;
+}
+.footer__container .ft-about ul a {
+  font-size: 1.1em;
+  color: var(--color4);
+}
+.footer__container .ft-about ul a:hover {
+  color: var(--color3);
+}
+.footer__container .copyright {
+  order: 3;
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer__container .copyright p {
+  font-size: 1.2em;
+  color: var(--color3);
+}
+
 button,
-a.button {
+a.button__hero,
+.button {
   padding: 1rem 2rem;
   margin: 0;
   font-size: 0.9em;
@@ -427,13 +531,14 @@ a.button {
   text-align: center;
   outline: 0;
   border: 0;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: transparent;
   transition: all 0.4s ease-in;
   transition-delay: 400ms;
 }
 button:hover,
-a.button:hover {
+a.button__hero:hover,
+.button:hover {
   background-color: var(--color2);
   color: var(--white);
   transition: all 0.4s ease-out;
@@ -446,11 +551,11 @@ a.button {
   margin: 1rem 0;
 }
 
-.button__hero--filled {
+a.button__hero--filled {
   background-color: var(--color1);
   color: var(--color4);
 }
-.button__hero--filled:hover {
+a.button__hero--filled:hover {
   filter: none;
   color: var(--color1);
   background-color: var(--color4);
@@ -462,7 +567,7 @@ a.button {
   --color3: #A27B5C;
   --color4: #DCD7C9;
   --black: #000;
-  --white: #e1e1e1;
+  --white: #fafafa;
   --purewhite: #fff;
   --bg: #e2e2e2;
   --facebook: #1877f2;

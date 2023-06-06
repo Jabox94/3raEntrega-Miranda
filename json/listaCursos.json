@@ -1,56 +1,62 @@
 [
    {
-      "Nombre": "Curso de fotografia Fundamentos",
-      "Categoria": "Fotografia",
-      "Precio": 230,
-      "ID": "CFF"
+      "nombreCurso": "",
+      "categoria": "",
+      "precio": "",
+      "id": ""
    },
    {
-      "Nombre": "Curso de fotografia Intermedio",
-      "Categoria": "Fotografia",
-      "Precio": 320,
-      "ID": "CFI"
+      "nombreCurso": "Curso de fotografia Fundamentos",
+      "categoria": "fotografia",
+      "precio": 230,
+      "id": "CF1"
    },
    {
-      "Nombre": "Curso de fotografia Avanzado",
-      "Categoria": "Fotografia",
-      "Precio": 400,
-      "ID": "CFA"
+      "nombreCurso": "Curso de fotografia Intermedio",
+      "categoria": "fotografia",
+      "precio": 320,
+      "id": "CF2"
    },
    {
-      "Nombre": "Curso de Cocina Fundamentos",
-      "Categoria": "Cocina",
-      "Precio": 230,
-      "ID": "CCF"
+      "nombreCurso": "Curso de fotografia Avanzado",
+      "categoria": "fotografia",
+      "precio": 400,
+      "id": "CF3"
    },
    {
-      "Nombre": "Curso de Cocina Intermedio",
-      "Categoria": "Cocina",
-      "Precio": 320,
-      "ID": "CCI"
+      "nombreCurso": "Curso de cocina Fundamentos",
+      "categoria": "cocina",
+      "precio": 230,
+      "id": "CC1"
    },
    {
-      "Nombre": "Curso de Cocina Avanzado",
-      "Categoria": "Cocina",
-      "Precio": 400,
-      "ID": "CCA"
+      "nombreCurso": "Curso de cocina Intermedio",
+      "categoria": "cocina",
+      "precio": 320,
+      "id": "CC2"
    },
    {
-      "Nombre": "Curso de JavaScript Fundamentos",
-      "Categoria": "Programacion",
-      "Precio": 230,
-      "ID": "CJF"
+      "nombreCurso": "Curso de cocina Avanzado",
+      "categoria": "cocina",
+      "precio": 400,
+      "id": "CC3"
    },
    {
-      "Nombre": "Curso de JavaScript Intermedio",
-      "Categoria": "Programacion",
-      "Precio": 320,
-      "ID": "CJI"
+      "nombreCurso": "Curso de JavaScript Fundamentos",
+      "categoria": "programacion",
+      "precio": 230,
+      "id": "CJ1"
    },
    {
-      "Nombre": "Curso de JavaScript Avanzado",
-      "Categoria": "Programacion",
-      "Precio": 400,
-      "ID": "CJA"
+      "nombreCurso": "Curso de JavaScript Intermedio",
+      "categoria": "programacion",
+      "precio": 320,
+      "id": "CJ2"
+   },
+   {
+      "nombreCurso": "Curso de JavaScript Avanzado",
+      "categoria": "programacion",
+      "precio": 400,
+      "id": "CJ3"
    }
 ]
