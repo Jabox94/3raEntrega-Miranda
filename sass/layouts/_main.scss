@@ -40,7 +40,7 @@
         transition: all 0.4s linear;
         @include flex(space-between, center, 2rem);
 
-        >div {
+        >a {
             .course__card {
                 width: 30rem;
                 height: auto;
@@ -79,6 +79,7 @@
                         width: auto;
                         height: auto;
                         text-transform: capitalize;
+                        @include flex(space-between, center, 0.5rem);
 
                         &.categoria {
                             color: var(--color3);
@@ -89,7 +90,7 @@
                         font-weight: 300;
 
                         span {
-                            font-weight: bold;
+                            font-weight: 500;
                         }
                     }
 

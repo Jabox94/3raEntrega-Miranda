@@ -47,20 +47,17 @@
                     <ion-icon role="img" name="cart" class="nav-icons" id="cart-icon" data-cart-buttons></ion-icon>
                     <span class="cart__items-counter">0</span>
                 </div>
-                <div class="container__cart-products" id="carrito">
+                <div class="container__cart-products" id="cart">
                     <ion-icon role="img" name="close" class="close__cart" data-cart-buttons></ion-icon>
-                    <table id="cart-list" class="cart-list">
-                        <thead>
-                            <tr>
-                                <th>Cantidad</th>
-                                <th>Nombre</th>
-                                <th>Precio</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-
+                    <div id="cart-list" class="cart-list">
+                        <div class="cart-list__header">
+                            <h4>imagen</h4>
+                            <h4>Nombre</h4>
+                            <h4>Precio</h4>
+                            <h4>Cantidad</h4>
+                        </div>
+                        <div class="cart-list__items" id="cart-list__items"></div>
+                    </div>
                     <a href="#" class="button" id="empty-cart">Vaciar carrito</a>
                 </div>
 
@@ -112,7 +109,7 @@
     </section>
 
     <main class="main">
-        <div class="main__container">
+        <div class="main__container" id="course-list">
             <div class="courses__container">
                 <div class="course__header-container">
                     <h3>
@@ -120,7 +117,7 @@
                         <ion-icon role="img" name="camera-outline"></ion-icon>
                     </h3>
                 </div>
-                <a href="#" class="courses__card-container" id="course-photo"></a>
+                <div href="#" class="courses__card-container" id="course-photo"></div>
             </div>
 
             <div class="courses__container">
@@ -130,7 +127,7 @@
                         <ion-icon role="img" name="restaurant-outline"></ion-icon>
                     </h3>
                 </div>
-                <a href="#" class="courses__card-container" id="course-cooking"></a>
+                <div href="#" class="courses__card-container" id="course-cooking"></div>
             </div>
             <div class="courses__container">
                 <div class="course__header-container">
@@ -139,7 +136,7 @@
                         <ion-icon role="img" name="code-slash-outline"></ion-icon>
                     </h3>
                 </div>
-                <a href="#" class="courses__card-container" id="course-code"></a>
+                <div href="#" class="courses__card-container" id="course-code"></div>
             </div>
         </div>
     </main>
